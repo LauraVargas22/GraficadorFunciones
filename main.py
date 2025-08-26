@@ -3,7 +3,7 @@ Archivo principal para la ejecución del programa
 '''
 
 if (__name__=='__main__'):
-
+    #Importación modulos
     import modules.mensajes as m
     import modules.customs as cu
     import modules.titles as t

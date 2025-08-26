@@ -3,8 +3,10 @@ import matplotlib.pyplot as plt
 
 class LinealFunction:
     def __init__(self, m=0, b=0):
-        self.m = m
-        self.b = b
+        """"Constructor de la clase"""
+        #Parámetros instanciados
+        self.m = m  #Pendiente
+        self.b = b  #Corte con el eje y
 
     def evaluate(self, x):
         """Evalúa la función lineal f(x) = m*x + b"""
