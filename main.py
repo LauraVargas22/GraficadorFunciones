@@ -4,7 +4,7 @@ Archivo principal para la ejecución del programa
 
 if (__name__=='__main__'):
     #Importación modulos
-    import modules.mensajes as m
+    import modules.mensajes as msg
     import modules.customs as cu
     import modules.titles as t
     import modules.menus as me
@@ -16,30 +16,32 @@ if (__name__=='__main__'):
     while (isActive):
         try:
             cu.borrarPantalla()
-            print (t.title1)
-            print (me.menu1)
+            t.show_title()
+            me.show_menu()
             opcMenu = int(input('Seleccione:__'))
             
             match opcMenu:
                 case 1:
-                    print ("FUNCIÓN LINEAL")
+                    cu.borrarPantalla()
+                    t.show_lineal()
                     m, b = fl.pedir_valores()
                     line = fl.LinealFunction(m, b)
                     line.plot()
                     cu.pausarPantalla()
                 case 2:
-                    print ("FUNCIÓN CUADRÁTICA")
+                    cu.borrarPantalla()
+                    t.show_quadratic()
                     a, b, c = fc.pedir_valores()
                     parabola = fc.QuadraticFunction(a, b, c)
                     parabola.plot()
                     cu.pausarPantalla()
                 case 3: 
-                    isActive = sa.validateData(m.msgInfo)
+                    isActive = sa.validateData(msg.msgInfo)
                 case _:
-                    print (m.msgCase)
+                    print (msg.msgCase)
                     cu.pausarPantalla()
             
         except ValueError:
-            print (m.msgExcept)
+            print (msg.msgExcept)
             cu.pausarPantalla()
             continue
