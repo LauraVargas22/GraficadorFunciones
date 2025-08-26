@@ -38,4 +38,4 @@ def pedir_valores():
             b = float(input("Ingrese el intercepto (b): "))
             return m, b
         except ValueError:
-            print("⚠️ Error: ingrese solo números.")
+            print("⚠️ Error: Ingrese solo números.")
