@@ -16,6 +16,7 @@ def show_menu():
 
     table.add_row("1", "📈  Función Lineal  ")
     table.add_row("2", "🟰  Función Cuadrática         ")
-    table.add_row("3", "🚪  Salir  ")
+    table.add_row("3", "〽️  Función Racional")
+    table.add_row("4", "🚪  Salir  ")
 
     console.print(Panel.fit(table, border_style="cyan", title="Menú Principal"))

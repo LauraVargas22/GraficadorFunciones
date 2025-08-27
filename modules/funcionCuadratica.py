@@ -61,7 +61,8 @@ class QuadraticFunction:
         # Vértice
         vertex = self.vertex()
         if vertex:
-            plt.scatter(*vertex, color='red', zorder=5, label=f'Vertice {vertex}')
+            plt.scatter(*vertex, color='red', zorder=5, 
+                label=f'Vertice ({vertex[0]:.2f}, {vertex[1]:.2f})')
 
         # Raíces
         roots = self.roots()

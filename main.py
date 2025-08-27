@@ -11,6 +11,7 @@ if (__name__=='__main__'):
     import modules.salir as sa
     import modules.funcionLineal as fl
     import modules.funcionCuadratica as fc
+    import modules.funcionRacional as fr
 
     isActive = True
     while (isActive):
@@ -36,6 +37,10 @@ if (__name__=='__main__'):
                     parabola.plot()
                     cu.pausarPantalla()
                 case 3: 
+                    cu.borrarPantalla()
+                    t.show_rational()
+                    fr.pedir_valores()
+                case 4:
                     isActive = sa.validateData(msg.msgInfo)
                 case _:
                     print (msg.msgCase)

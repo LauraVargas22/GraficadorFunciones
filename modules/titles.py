@@ -16,8 +16,9 @@ def show_title():
     ))
 
 # Subtítulos
-lineal = pyfiglet.figlet_format("Funcion Lineal", font="small")
-quadratic = pyfiglet.figlet_format("Funcion Cuadratica", font="small")
+lineal = pyfiglet.figlet_format("Función Lineal", font="small")
+quadratic = pyfiglet.figlet_format("Función Cuadratica", font="small")
+rational = pyfiglet.figlet_format("Función Racional", font="small")
 
 def show_lineal():
     console.print(Panel.fit(
@@ -31,4 +32,11 @@ def show_quadratic():
         f"[yellow]{quadratic}[/yellow]",
         border_style="yellow",
         title="🟰 Cuadrática"
+    ))
+
+def show_rational():
+    console.print(Panel.fit(
+        f"[purple]{rational}[/purple]",
+        border_style="purple",
+        title="〽️ Racional"
     ))
