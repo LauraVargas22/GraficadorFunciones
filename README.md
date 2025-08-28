@@ -15,7 +15,7 @@ Proyecto de consola desarrollado en Python, permite graficar diferentes tipos de
 ### ▶️ Instalación y uso
 1. Clonar el repositorio
 ```bash
-git clone https://github.com/LauraVargas22/GraficaFunciones.git
+git clone https://github.com/LauraVargas22/GraficadorFunciones.git
 cd GraficaFunciones
 ```
 
