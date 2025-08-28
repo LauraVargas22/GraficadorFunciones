@@ -23,6 +23,7 @@ if (__name__=='__main__'):
             
             match opcMenu:
                 case 1:
+                    """Función Lineal"""
                     cu.borrarPantalla()
                     t.show_lineal()
                     m, b = fl.pedir_valores()
@@ -30,6 +31,7 @@ if (__name__=='__main__'):
                     line.plot()
                     cu.pausarPantalla()
                 case 2:
+                    """Función Cuadrática"""
                     cu.borrarPantalla()
                     t.show_quadratic()
                     a, b, c = fc.pedir_valores()
@@ -37,10 +39,12 @@ if (__name__=='__main__'):
                     parabola.plot()
                     cu.pausarPantalla()
                 case 3: 
+                    """Función Racional"""
                     cu.borrarPantalla()
                     t.show_rational()
                     fr.pedir_valores()
                 case 4:
+                    # Opción Salir
                     isActive = sa.validateData(msg.msgInfo)
                 case _:
                     print (msg.msgCase)

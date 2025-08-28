@@ -39,14 +39,17 @@ python main.py
 ```
 
 ## 📂 Estructura del proyecto  
-├── modules/ 
-│ ├── funcionLineal.py
-│ ├── funcionCuadratica.py
-│ ├── funcionRacional.py
-│ ├── menus.py
-│ ├── salir.py
-│ ├── titles.py
-│ ├── customs.py
-│ └── mensajes.py
-├── main.py # Archivo principal para ejecutar el programa
-└── README.md # Documentación del proyecto
+```
+graficador-funciones/
+├── modules/                 
+│   ├── funcionLineal.py       # Lógica para graficar función lineal
+│   ├── funcionCuadratica.py   # Lógica para graficar función cuadrática
+│   ├── funcionRacional.py     # Lógica para graficar función racional
+│   ├── menus.py               # Menús de navegación en consola
+│   ├── salir.py               # Opción para salir del programa
+│   ├── titles.py              # Títulos y subtítulos personalizados
+│   ├── customs.py             # Estilos y configuraciones
+│   └── mensajes.py            # Mensajes de ayuda y notificaciones
+├── main.py                    # Archivo principal para ejecutar el programa
+└── README.md                  # Documentación del proyecto
+```
