@@ -20,14 +20,28 @@ class LinealFunction:
         plt.plot(domain, f_range, color='blue',
                  label=f'Línea recta con Pendiente {self.m} - Intercepto {self.b}')
         
+        # 🔴 Corte con el eje Y: (0, b)
+        plt.scatter(0, self.b, color='red', zorder=5, label=f"Corte eje Y (0,{self.b})")
+        plt.text(0, self.b+0.5, f"(0,{self.b})", fontsize=9, ha='center', color='red')
+
+        # 🔵 Corte con el eje X: (-b/m, 0), si m != 0
+        if self.m != 0:
+            x_intercept = -self.b / self.m
+            plt.scatter(x_intercept, 0, color='green', zorder=5, label=f"Corte eje X ({x_intercept:.2f},0)")
+            plt.text(x_intercept, 0.5, f"({x_intercept:.2f},0)", fontsize=9, ha='center', color='green')
+
         # Dibujar ejes
         plt.axhline(0, color='black')
         plt.axvline(0, color='black')
 
+        plt.title(f'Función Lineal:', fontsize=14, pad=20, color='green')
         plt.xlabel('Eje x')
         plt.ylabel('Eje y')
+        #[xmin, xmax, ymin, ymax]
         plt.axis([-4, 4, -10, 10])
-        plt.grid()
+        #Cuadrícula
+        plt.grid(True, alpha=0.3, linestyle='-', linewidth=0.5)
+        #Añadir leyenda al gráfico
         plt.legend()
         plt.show()
 

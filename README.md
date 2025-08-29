@@ -53,3 +53,6 @@ graficador-funciones/
 ├── main.py                    # Archivo principal para ejecutar el programa
 └── README.md                  # Documentación del proyecto
 ```
+
+## Referencias
+- [Documentación Rich](https://rich.readthedocs.io/en/latest/index.html)

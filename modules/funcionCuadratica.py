@@ -47,6 +47,7 @@ class QuadraticFunction:
     
     def plot(self):
         """Dibuja la función cuadrática con vértice y raíces"""
+        #Crea un arreglo de números min, max, 0.1(aumentando)
         domain = np.arange(-6, 6, 0.1)
         f_range = self.evaluate(domain)
 
@@ -76,10 +77,12 @@ class QuadraticFunction:
                  color="black", ha="center", weight='bold',
                  bbox=dict(facecolor='white', alpha=0.8, edgecolor='purple', boxstyle='round,pad=0.5'))
 
+        plt.title(f'Función Cuadrática:', fontsize=14, pad=20, color='green')
         plt.xlabel('Eje x')
         plt.ylabel('Eje y')
+        #[xmin, xmax, ymin, ymax]
         plt.axis([-6, 6, -20, 20])
-        plt.grid()
+        plt.grid(True, alpha=0.3, linestyle='-', linewidth=0.5)
         plt.legend()
         plt.show()
 

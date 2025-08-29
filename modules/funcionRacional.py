@@ -203,6 +203,7 @@ class RationalFunction:
             margin = max(y_range * 0.1, 1)  # Al menos 1 unidad de margen
             plt.ylim(y_min - margin, y_max + margin)
         
+        #Evita la superposición de los elementos
         plt.tight_layout()
         plt.show()
 
